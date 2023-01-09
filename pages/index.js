@@ -14,27 +14,27 @@ export default function Home() {
   return (
     <>
       <div className="w-screen h-screen bg-slate-100 flex flex-col items-center px-10">
-        <div className="font-bold">{a.name}</div>
-        <div className="w-60 h-60 bg-slate-400 rounded-full flex justify-center items-center">
+        <div className="w-60 h-60 bg-slate-400 rounded-full flex justify-center items-center mt-10">
           <img
             src="propic.jpeg"
             className="w-56 h-56 rounded-full object-cover"
           />
         </div>
+        <div className="font-bold text-3xl mt-5 mb-5">{a.name}</div>
         <div className="w-full h-40 bg-indigo-700 text-slate-100 flex flex-col justify-center items-center text-2xl font-bold">
           About me
           <div className="text-sm">{a.tailbar}</div>
         </div>
-        <div className="w-30 h-30 text-black bg-slate-200">
-          <div className="font-bold">{a.details}</div>
-          <div className="fond-normal text-sm">{a.fullname}</div>
-          <div className=" font-normal text-ms">{a.firstname}</div>
-          <div className="fond-bold">{a.age}</div>
-          <div className="text-sm">30 years</div>
-          <div className="font-bold">{a.Location}</div>
-          <div className="fond-normal text-sm">{a.location}</div>
+        <div className="w-30 h-30 text-black bg-slate-100">
+          <div className="font-bold mt-2">{a.details}</div>
+          <div className="fond-bold text-sm mt-1">{a.fullname}</div>
+          <div className=" font-normal text-ms mt-1">{a.firstname}</div>
+          <div className="fond-bold mt-1">{a.age}</div>
+          <div className="text-sm mt-1">30 years</div>
+          <div className="font-bold mt-1">{a.Location}</div>
+          <div className="fond-normal text-sm mt-1">{a.location}</div>
         </div>
-        <div className="w-80 h-20 bg-slate-200 flex justify-center items-center gap-5">
+        <div className="w-full h-20 bg-slate-100 flex justify-center items-center gap-5">
           {socail.map((row, i) => (
             <div key={i} className="w-8 h-8 flex items-center justify-center">
               <img src={row} className="w-6 h-6 rounded-full object-cover" />
