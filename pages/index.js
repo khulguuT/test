@@ -35,8 +35,8 @@ export default function Home() {
           <div className="fond-normal text-sm">{a.location}</div>
         </div>
         <div className="w-80 h-20 bg-slate-200 flex justify-center items-center gap-5">
-          {socail.map((row) => (
-            <div className="w-8 h-8 flex items-center justify-center">
+          {socail.map((row, i) => (
+            <div key={i} className="w-8 h-8 flex items-center justify-center">
               <img src={row} className="w-6 h-6 rounded-full object-cover" />
             </div>
           ))}
